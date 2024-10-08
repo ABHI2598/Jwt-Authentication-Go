@@ -1,0 +1,48 @@
+# Go binary files
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+
+# Compiled object files
+*.o
+*.a
+
+# Build directory
+/bin/
+/obj/
+
+# Vendor directory (if using Go modules)
+vendor/
+
+# Go workspace files
+go.work
+go.work.sum
+
+# Configuration files
+*.env
+*.json
+*.yaml
+*.yml
+
+# Database files
+*.db
+*.mongo
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*.DS_Store
+*.log
+
+# Dependency directories
+node_modules/
+
+# Others
+*.tgz
+*.zip
+*.tar.gz
