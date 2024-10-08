@@ -15,7 +15,7 @@ This project demonstrates how to implement JWT (JSON Web Token) authentication i
 
 - **Go**: Main programming language.
 - **JWT (JSON Web Tokens)**: For stateless authentication.
-- **gin**: HTTP request router for handling routes.
+- **GIN**: HTTP request router for handling routes.
 - **github.com/dgrijalva/jwt-go**: JWT library for creating and verifying tokens.
 - **MongoDB**: For persistent user storage.
 
@@ -32,5 +32,5 @@ Ensure you have the following installed:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/go-jwt-auth.git
-   cd go-jwt-auth
+   git clone https://github.com/ABHI2598/Jwt-Authentication-Go.git
+   cd Jwt-Authentication-Go
