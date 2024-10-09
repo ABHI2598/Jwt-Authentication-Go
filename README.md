@@ -34,3 +34,17 @@ Ensure you have the following installed:
    ```bash
    git clone https://github.com/ABHI2598/Jwt-Authentication-Go.git
    cd Jwt-Authentication-Go
+
+2. Install dependencies:
+   ```bash
+   go mod init main.go
+   go mod tidy
+   
+3. Set up environment variables: Create a .env file in the project root to store sensitive information like JWT secrets and MongoDB connection details.
+4. Run the application:
+   ```bash
+   go run main.go
+5. The API will now be accessible at respective port defined in .env file.
+   ```bash
+   http://localhost:8080
+
