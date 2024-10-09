@@ -41,6 +41,7 @@ Ensure you have the following installed:
    go mod tidy
    
 3. Set up environment variables: Create a .env file in the project root to store sensitive information like JWT secrets and MongoDB connection details.
+   
 4. Run the application:
    ```bash
    go run main.go
