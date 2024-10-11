@@ -117,9 +117,7 @@ func Login() gin.HandlerFunc {
 		}
 
 		filter := bson.M{"email": user.Email}
-		log.Println(filter)
 		err := userCollection.FindOne(c, filter).Decode(&foundUser)
-		log.Println(foundUser)
 		if err == mongo.ErrNoDocuments {
 			ctx.JSON(http.StatusNotFound, gin.H{"error": "No docuement found"})
 		} else if err != nil {
@@ -140,7 +138,6 @@ func Login() gin.HandlerFunc {
 
 		helpers.UpdateAllTokens(token, refreshToken, foundUser.UserId)
 
-		log.Println(foundUser.UserId)
 		objectId, _ := primitive.ObjectIDFromHex(foundUser.UserId)
 		err = userCollection.FindOne(c, bson.M{"_id": objectId}).Decode(&foundUser)
 		if err != nil {
